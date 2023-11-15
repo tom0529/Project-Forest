@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+		href="https://fonts.googleapis.com/css2?family=BenchNine:wght@300&family=Open+Sans:wght@300;700&display=swap"
+		rel="stylesheet"
+		/>
+		<script
+		src="https://kit.fontawesome.com/579928745e.js"
+		crossorigin="anonymous"
+		></script>
+		
+		<link rel="stylesheet" href="./dist/css/main.min.css"/>
+	</head>
+	<body>
+		<!-- @include 'nav.sp.kit' -->
+		<div class="wrapper">
+			<form>
+				<h2 class="contact-us">Kontakt</h2>
+				<p class="contact-us">
+					Skontakuj się z nami poprzez formularz lub social media.
+				</p>
+				<div class="form-box">
+					<label for="username">Imię:</label>
+					<input type="text" id="username" placeholder="Podaj swoje imię" />
+					<p class="error-text">error</p>
+				</div>
+				<div class="form-box">
+					<label for="surname">Nazwisko:</label>
+					<input type="text" id="surname" placeholder="Podaj swoje nazwisko" />
+					<p class="error-text">error</p>
+				</div>
+				<div class="form-box">
+					<label for="email">Adres e-mail:</label>
+					<input type="email" id="email" placeholder="Podaj adres mailowy" />
+					<p class="error-text">error</p>
+				</div>
+				<div class="form-box">
+					<label for="textarea">Wiadmość do nas:</label>
+					<textarea
+						name="textarea"
+						id="textarea"
+						cols="30"
+						rows="10"
+						placeholder="Tutaj wpisz swoją wiadomość"
+					></textarea>
+					<p class="error-text">error</p>
+				</div>
+				<div class="control-buttons">
+					<button class="clear">Wyczyść</button>
+					<button class="send">Wyślij</button>
+				</div>
+				<div class="popup">
+					<p>Formularz został poprawnie wysłany!</p>
+					<button class="close">Zamknij</button>
+				</div>
+			</form>
+		</div>
+
+		<div class="map-box">
+			<div class="sign">
+				<h2 class="header">Znajdziesz nas tutaj</h2>
+				<i class="fa-solid fa-arrow-down"></i>
+			</div>
+			<div class="google-map">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.89823392774!2d19.89026927653591!3d50.08819217152519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a326d015c3b%3A0x47a12cd367a1f34e!2sRestauracja%20McDonald&#39;s!5e0!3m2!1spl!2spl!4v1699532767567!5m2!1spl!2spl"
+					width="600"
+					height="450"
+					style="border: 0"
+					allowfullscreen=""
+					loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"
+				></iframe>
+			</div>
+			<div class="social-media">
+				<p>I tutaj</p>
+				<i class="fa-brands fa-facebook"></i>
+				<i class="fa-brands fa-x-twitter"></i>
+				<i class="fa-brands fa-instagram"></i>
+			</div>
+		</div>
+
+		<!-- @include 'footer.kit' -->
+
+
+		<script src="./src/js/main.js"></script>
+	</body>
+</html>
